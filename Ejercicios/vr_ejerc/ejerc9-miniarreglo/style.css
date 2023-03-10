@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --color1: #311847;
+    --color2: #20A4F3;
+    --color2red: hsl(60, 33%, 99%);
+    --color3: #A01A7D;
+}
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: var(--color3);
+    background-color: var(--color2red);
+}
+.contenedor{
+    width:75%;
+    max-width: 500px;
+    padding: 1em;
+    margin: 2px auto;
+    background-color: var(--color1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2em 1em;
+}
+h1{
+    margin-bottom: 1em;
+    color: var(--color2red);
+}
+input{
+    border: 0;
+    border-bottom: 3px solid var(--color2);
+    border-radius: 3px 10px;
+    padding: 5px;
+}
+.botonera{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0.4em;
+}
+.botones{
+    color: var(--color2);
+    border-radius: 3px 15px;
+    border-bottom: 3px solid var(--color3);
+    padding: 0.2em;
+    font-weight: 700;
+    cursor: pointer;
+}
+.botones1{
+    color: var(--color2red);
+    border-radius: 15px 3px;
+    border-bottom: 3px solid var(--color2);
+    padding: 0.2em;
+    font-weight: 700;
+    cursor: pointer;
+}
+.botones2{
+    color: var(--color2);
+    border-radius: 3px 15px;
+    border-bottom: 3px solid var(--color2);
+    padding: 0.2em;
+    font-weight: 700;
+    cursor: pointer;
+}
+.mostrarNum{
+    position: absolute;
+    top: 200px;
+    width: 50%;
+    max-width: 500px ;
+    display: flex;
+    margin: auto;
+    font-weight: 700;
+    font-size: larger;
+}
+.visible{
+    display: none;
+}
